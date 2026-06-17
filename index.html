@@ -535,7 +535,7 @@
         <p class="rule-text">Use the <b>← →</b> buttons (or keyboard arrow keys) to navigate between all hint positions you've unlocked so far.</p>
       </div>
       <div class="rule-row">
-        <div class="rule-icon" style="font-size:0.8rem;"></div>
+        <div class="rule-icon" style="font-size:0.8rem;">🟨</div>
         <p class="rule-text">The <b style="color:#f5d060;">highlighted squares</b> show the last move played in the current position.</p>
       </div>
     </div>
@@ -885,7 +885,7 @@ function shakeInput() {
 }
 
 function showResult(won) {
-  document.getElementById('rIcon').textContent  = won ? 
+  document.getElementById('rIcon').textContent  = won ? '🎉' : '😞';
   document.getElementById('rTitle').textContent = won ? 'Nice one!' : 'Game over';
   document.getElementById('rName').textContent  = opening.name;
   document.getElementById('rDots').innerHTML    =
