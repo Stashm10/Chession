@@ -885,7 +885,6 @@ function shakeInput() {
 }
 
 function showResult(won) {
-  document.getElementById('rIcon').textContent  = won ? '🎉' : '😞';
   document.getElementById('rTitle').textContent = won ? 'Nice one!' : 'Game over';
   document.getElementById('rName').textContent  = opening.name;
   document.getElementById('rDots').innerHTML    =
