@@ -336,22 +336,9 @@
     .modal-rules {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 10px;
       margin-bottom: 4px;
-    }
-
-    .rule-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-
-    .rule-icon {
-      font-size: 1.2rem;
-      flex-shrink: 0;
-      width: 28px;
-      text-align: center;
-      margin-top: 1px;
+      padding-left: 18px;
     }
 
     .rule-text {
@@ -361,14 +348,6 @@
     }
 
     .rule-text b { color: var(--text); }
-
-    .rule-swatch {
-      display: inline-block;
-      width: 14px; height: 14px;
-      border-radius: 2px;
-      vertical-align: middle;
-      margin-right: 3px;
-    }
 
     .modal-luck {
       text-align: center;
@@ -409,17 +388,16 @@
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 36px 32px;
+      padding: 28px 32px 24px;
       text-align: center;
-      max-width: 380px; width: 90%;
+      max-width: 360px; width: 90%;
       animation: slideup 0.25s ease;
     }
 
-    .r-icon  { font-size: 3rem; margin-bottom: 12px; }
-    .r-title { font-size: 1.4rem; font-weight: 800; margin-bottom: 6px; }
-    .r-label { font-size: 0.65rem; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
-    .r-name  { color: var(--accent-h); font-size: 1.05rem; font-weight: 700; margin-bottom: 22px; }
-    .r-dots  { display: flex; justify-content: center; gap: 6px; margin-bottom: 22px; }
+    .r-title { font-size: 1.5rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
+    .r-label { font-size: 0.65rem; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+    .r-name  { color: var(--accent-h); font-size: 1.05rem; font-weight: 700; margin-bottom: 20px; }
+    .r-dots  { display: flex; justify-content: center; gap: 6px; margin-bottom: 20px; }
     .r-dot   { width: 10px; height: 10px; border-radius: 50%; background: var(--wrong); }
     .r-dot.ok { background: var(--accent); }
 
@@ -521,24 +499,12 @@
 
     <hr class="modal-divider">
 
-    <div class="modal-rules">
-      <div class="rule-row">
-        <div class="rule-icon">♟</div>
-        <p class="rule-text">A position from a famous chess opening is shown on the board. <b>Type the name of the opening</b> — or start typing to filter from 25 options.</p>
-      </div>
-      <div class="rule-row">
-        <div class="rule-icon">↩</div>
-        <p class="rule-text">Each <b>wrong guess</b> steps the board back one full move, revealing an earlier position as a hint.</p>
-      </div>
-      <div class="rule-row">
-        <div class="rule-icon">◀▶</div>
-        <p class="rule-text">Use the <b>← →</b> buttons (or keyboard arrow keys) to navigate between all hint positions you've unlocked so far.</p>
-      </div>
-      <div class="rule-row">
-        <div class="rule-icon" style="font-size:0.8rem;">🟨</div>
-        <p class="rule-text">The <b style="color:#f5d060;">highlighted squares</b> show the last move played in the current position.</p>
-      </div>
-    </div>
+    <ul class="modal-rules">
+      <li class="rule-text">A position from a famous chess opening is shown on the board. <b>Type the name of the opening</b> — or start typing to filter from 25 options.</li>
+      <li class="rule-text">Each <b>wrong guess</b> steps the board back one full move, revealing an earlier position as a hint.</li>
+      <li class="rule-text">Use the <b>← →</b> buttons (or keyboard arrow keys) to navigate between all hint positions you've unlocked so far.</li>
+      <li class="rule-text">The <b style="color:#f5d060;">highlighted squares</b> show the last move played in the current position.</li>
+    </ul>
 
     <hr class="modal-divider">
 
@@ -550,7 +516,6 @@
 <!-- Result overlay -->
 <div class="overlay hidden" id="overlay">
   <div class="result-card">
-    <div class="r-icon"  id="rIcon">🎉</div>
     <div class="r-title" id="rTitle">Nice one!</div>
     <div class="r-label">The opening was</div>
     <div class="r-name"  id="rName"></div>
