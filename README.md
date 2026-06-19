@@ -14,8 +14,6 @@ Guess the chess opening based on a position played by grandmasters.
 
 https://stashm10.github.io/Chession
 
-## Built with
+## How I Built it
 
-- HTML, CSS, and JavaScript
-- chess.js for move validation
-- Piece graphics from Lichess
+Everything was coded with HTML, CSS, and JavaScript. This web-based game is not complicated, thus the code itself should be complicated either. Additionally I used chess.js for move validation and the piece graphics came from Lichess, which is an offical platofrom to play chess. 
