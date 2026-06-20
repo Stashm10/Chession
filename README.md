@@ -8,7 +8,8 @@ Guess the chess opening based on a position played by grandmasters.
   Type the name of the opening, or start typing to filter from 25 options.
   You have 5 guesses.
   Each wrong guess steps the board back one full move, revealing an earlier position as a hint.
-  Use the arrow buttons (or arrow keys) to navigate between hint positions you've unlocked. This is currently intended for players who are more familar with chess, however I will add difficulty modes in the future.
+  Use the arrow buttons (or arrow keys) to navigate between hint positions you've unlocked. 
+  This is currently intended for players who are more familar with chess, however I will add difficulty modes in the future.
 
 ## Play it here
 
