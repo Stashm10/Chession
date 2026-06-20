@@ -17,4 +17,4 @@ https://stashm10.github.io/Chession
 
 ## How I Built it
 
-Everything was coded with HTML, CSS, and JavaScript. This web-based game is not complicated, thus the code itself should be complicated either. Additionally I used chess.js for move validation and the piece graphics came from Lichess, which is an offical platofrom to play chess. 
+Everything was coded with HTML, CSS, and JavaScript. This web-based game is not complicated, thus the code itself should not be complicated either. Additionally I used chess.js for move validation and the piece graphics came from Lichess, which is an offical platofrom to play chess. 
